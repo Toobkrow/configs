@@ -1,0 +1,21 @@
+# variables
+export EDITOR=vim
+export VISUAL=$EDITOR
+export PAGER=less
+export PATH=$PATH:~/bin
+
+# aliases
+alias ls='ls -b -CF --color=auto --group-directories-first --human-readable'
+alias lsa='ls -a'
+alias grep='grep --color=always'
+alias cp='cp -v'
+alias ..='cd ..'
+alias b='cd -'
+alias shutdown='sudo shutdown'
+alias reboot='sudo reboot'
+alias vpnc='sudo vpnc'
+alias vpnc-disconnect='sudo vpnc-disconnect'
+alias wireshark='sudo wireshark'
+alias ac='cd ~/.config/awesome'
+alias fm='ranger'
+alias mt='python /home/daniel/work/code/mountie/mountie.py'

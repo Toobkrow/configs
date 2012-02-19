@@ -1,0 +1,2 @@
+include "/usr/share/themes/QtCurve/gtk-2.0/gtkrc"
+gtk-icon-theme-name = "oxygen"

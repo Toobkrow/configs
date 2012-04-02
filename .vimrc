@@ -2,8 +2,11 @@ set autoindent
 set smartindent
 set number "show line numbers
 syntax enable "syntax highlighting
+
+
 set fileencoding=utf-8
 set mouse=nvi "enable mouse for modes n normal, v visual, i insert
+set cursorline
 set scrolloff=3 "keep lines when scrolling
 
 set tabstop=2 "number of spaces of tab character
@@ -26,9 +29,14 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 if has("gui_running")
-	set guifont=Monospace\ 10
-	set guioptions+=b
+	set guifont=Monospace\ 11
+	set guioptions=bm
+	colorscheme neverness
+else
+	set t_Co=256 "necessary for the colorscheme to work
+	colorscheme ir_black
 endif
+
 
 if has("autocmd")
 	autocmd BufWritePre *.py,*.c,*.cpp,*.sh,*.tex,*.lua :call <SID>StripTrailingWhitespaces()

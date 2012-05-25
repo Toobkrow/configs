@@ -28,6 +28,7 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+
 if has("gui_running")
 	set guifont=Monospace\ 11
 	set guioptions=bm

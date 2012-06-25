@@ -1,22 +1,36 @@
-# variables
+# variables {{{
 export EDITOR=vim
 export VISUAL=$EDITOR
 export PAGER=less
 export PATH=$PATH:~/bin
+#}}}
 
 # aliases
+
+#ls
 alias ls='ls -b -CF --color=auto --group-directories-first --human-readable'
-alias lsa='ls -a'
+alias ll='ls -l'
+alias la='ll -a'
+
+#some shortcuts
 alias grep='grep --color=always'
 alias cp='cp -v'
 alias ..='cd ..'
 alias b='cd -'
+alias ac='cd ~/.config/awesome'
+alias fm='ranger'
+alias mt='python /home/daniel/work/code/mountie/mountie.py'
+alias dbus-shutdown='dbus-send --system --print-reply --dest=\"org.freedesktop.ConsoleKit\" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop'
+alias ping='ping -c 5'
+alias da='date "+%A, %B %d, %Y [%T]"'
+alias mkdir='mkdir -p -v'
+
+#sudo nopassword
 alias shutdown='sudo shutdown'
 alias reboot='sudo reboot'
 alias vpnc='sudo vpnc'
 alias vpnc-disconnect='sudo vpnc-disconnect'
 alias wireshark='sudo wireshark'
-alias ac='cd ~/.config/awesome'
-alias fm='ranger'
-alias mt='python /home/daniel/work/code/mountie/mountie.py'
-alias dbus-shutdown='dbus-send --system --print-reply --dest=\"org.freedesktop.ConsoleKit\" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop'
+
+#other
+alias buzzer='da && buzzer'

@@ -1,3 +1,14 @@
 XTerm*font: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
 XTerm*background: black
-XTerm*foreground: gray
+XTerm*foreground: grey
+
+
+URxvt.background: black
+URxvt.foreground: #AAAAAA
+URxvt.scrollBar: false
+URxvt.transparent: true
+URxvt.shading: 10
+URxvt.font: xft:terminus:size=10:antialias=false
+URxvt.perl-ext-common:  default,matcher,vtwheel
+URxvt.urlLauncher:      /usr/bin/firefox
+URxvt.matcher.button:   1

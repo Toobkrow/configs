@@ -19,10 +19,10 @@ alias ..='cd ..'
 alias b='cd -'
 alias ac='cd ~/.config/awesome'
 alias fm='ranger'
-alias mt='python /home/daniel/work/code/mountie/mountie.py'
+alias mt='mountie'
 alias dbus-shutdown='dbus-send --system --print-reply --dest=\"org.freedesktop.ConsoleKit\" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop'
 alias ping='ping -c 5'
-alias da='date "+%A, %B %d, %Y [%T]"'
+alias d='date "+%A, %B %d, %Y [%T]"'
 alias mkdir='mkdir -p -v'
 
 #sudo nopassword
@@ -33,4 +33,4 @@ alias vpnc-disconnect='sudo vpnc-disconnect'
 alias wireshark='sudo wireshark'
 
 #other
-alias buzzer='da && buzzer'
+alias buzzer='d && buzzer'
